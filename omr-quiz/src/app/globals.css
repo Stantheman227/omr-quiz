@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+  @font-face {
+    font-family: "OMR-Sans-Regular";
+    src: url("https://cdn.shopify.com/s/files/1/0563/4310/1600/files/OMR-Sans-Regular.woff2?v=1681211037");
+  }
+  @font-face {
+    font-family: "OMR-Sans-Bold";
+    src: url("https://cdn.shopify.com/s/files/1/0563/4310/1600/files/OMR-Sans-Bold.woff2?v=1681211038");
+  }
+  @font-face {
+    font-family: "OMR-Sans-Extra-Bold";
+    src: url("https://cdn.shopify.com/s/files/1/0563/4310/1600/files/OMR-Sans-Extra-Bold.woff2?v=1681211038");
+  }
+  
+  body {
+    font-family: "OMR-Sans", sans-serif;
+  }
+
+
+
+/* #8259ff #ffffff #000000 */ 
