@@ -1,0 +1,23 @@
+  [
+    {
+      "question": "Welcher Döner ist der beliebteste in Hamburg?",
+      "options": ["Imren Grill", "Köz Urfa", "Altona Döner", "Baba Green"],
+      "answer": "Köz Urfa"
+    },
+    {
+      "question": "Wo gehe ich am liebsten tanzen?",
+      "options": ["Mojo Club", "Golden Pudel Club", "Fundbureau", "Uebel & Gefährlich"],
+      "answer": "Mojo Club"
+    },
+    {
+      "question": "Welches Café trinke ich gerne?",
+      "options": ["Elbgold", "Törnqvist", "Public Coffee Roasters", "Kaffeekommune"],
+      "answer": "Elbgold"
+    },
+    {
+      "question": "Was mache ich an einem typischen Freitagabend?",
+      "options": ["Essen gehen", "Tanzen", "Netflix", "Bier in der Schanze"],
+      "answer": "Bier in der Schanze"
+    }
+  ]
+  
