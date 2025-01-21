@@ -77,7 +77,7 @@ export default function FinishedQuiz({
               </p>
               <div className="grid grid-cols-2 items-center justify-center gap-5 pt-2">
                 <input
-                  className="bg-gray-100 h-12 w-50 p-2 focus:outline-none placeholder:text-black text-white"
+                  className="bg-gray-100 h-12 w-50 p-2 focus:outline-none placeholder:text-black text-black"
                   placeholder="Dein Vorname"
                 />
 
