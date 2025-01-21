@@ -59,24 +59,23 @@ export default function FinishedQuiz({
         </div>
         <div className="pt-16 flex items-center justify-center">
           <div className="grid grid-cols-1 gap-5 p-1 ">
-            <p className="font-sans-extra-bold text-4xl">
-              Lass dir deine Ergebnisse bequem per Email zukommen <br /> oder
-              speichere sie direkt als PDF!
+            <p className="font-sans-extra-bold text-4xl text-center">
+              Lass dir deine Ergebnisse bequem per Email zukommen!
             </p>
 
             <Form
-              className="border-white border-2 flex flex-col p-5 rounded-l items-center justify-center space-x-2"
+              className="flex flex-col rounded-l items-center justify-center"
               action="/sendEmailApi"
             >
               {" "}
               {/* On submission, the input value will be appended to 
             the URL, e.g. /sendEmailApi?email=Max.Mustermann@OMR-Ramp106GmbH.de  => Hier wird dann ein API call eingebaut um die Email zu versenden*/}
-              <p>
+              <p className="font-sans-bold">
                 Trage deine E-mail ein um die Antwort per E-mail zu erhalten.
               </p>
-              <div className="grid grid-cols-2 items-center justify-center gap-5 ">
+              <div className="grid grid-cols-2 items-center justify-center gap-5 pt-2">
                 <input
-                  className="bg-gray-100 h-12 w-50 p-2 focus:outline-none placeholder:text-black text-black"
+                  className="bg-gray-100 h-12 w-50 p-2 focus:outline-none placeholder:text-black text-white"
                   placeholder="Dein Vorname"
                 />
 
@@ -101,20 +100,36 @@ export default function FinishedQuiz({
               </div>
             </Form>
 
-            <div>
-              <p>Oder direkt als PDF</p>
-              <div className="w-fit bg-gray-300 p-5 rounded-xl flex flex-row items-center justify-center space-x-2 cursor-pointer">
-                <button onClick={() => printPDF(jsonData, answerArray)}>
+            <div className="py-5 flex flex-col items-center justify-center space-y-5 my-20">
+              <p className="font-sans-extra-bold text-4xl text-center">
+                Oder direkt als PDF
+              </p>
+              <div className="w-fit ounded-l flex first-line:items-center justify-center space-x-2 cursor-pointer bg-omr-orange p-4 font-sans-bold text-black">
+                <button
+                  className="uppercase"
+                  onClick={() => printPDF(jsonData, answerArray)}
+                >
                   Download PDF
                 </button>
               </div>
             </div>
 
-            <p>Deine Antworten</p>
+            <p className="font-sans-extra-bold text-4xl">Deine Antworten:</p>
             {jsonData.map((question, index) => (
-              <div key={index} className="bg-gray-300 p-5 rounded-xl">
+              <div key={index} className="rounded-l">
+                <p className="relative w-fit text-3xl text-black bg-white font-sans-extra-bold uppercase p-1">
+                  Frage {index + 1} : {question.question}
+                </p>
+                <p className="pt-1">
+                  <span className="text-omr-orange">Deine Antwort: </span>{" "}
+                  {question.options[answerArray[index]]}
+                </p>
                 <p>
-                  Antwort {index + 1} : {question.options[answerArray[index]]}
+                  {" "}
+                  <span className="text-omr-purple">
+                    Richtige Antwort:{" "}
+                  </span>{" "}
+                  {question.answer}
                 </p>
               </div>
             ))}

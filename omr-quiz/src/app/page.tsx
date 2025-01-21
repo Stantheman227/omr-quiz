@@ -6,18 +6,18 @@ import Quiz from "./components/Quiz/Quiz";
 
 export default function Home() {
   return (
-    <main className="w-full relative">
+    <main className="w-full relative min-h-screen flex flex-col">
       <div className="relative top-0 left-0 overflow-visible z-10 w-full space-y-16">
         <Header />
         <Banner />
       </div>
 
-      <div className="relative w-full">
+      <div className="w-full grow">
         <Quiz />
+      </div>
 
-        <div className="relative bg-omr-black">
-          <Footer />
-        </div>
+      <div className="bg-omr-black">
+        <Footer />
       </div>
     </main>
   );

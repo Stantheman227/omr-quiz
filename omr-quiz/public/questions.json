@@ -25,7 +25,7 @@
       "answer": "Bunkerterasse"
   },
   {
-      "question": "Welcher Burgerladen hat meiner Meinung nach die besten Burger?",
+      "question": "Welcher Burgerladen hat die besten Burger?",
       "options": ["Hob's Hut of Burger - Ballindamm", "Grilly Idol St.Pauli", "Otto's Burger in der Schanze", "Dulf's Burger Messehallen"],
       "answer": "Hob's Hut of Burger - Ballindamm"
   },
@@ -40,7 +40,7 @@
       "answer": "Einfach nur ein Astra"
   },
   {
-      "question": "In welchem Hamburger Stadtteil fühle ich mich am meisten zuhause?",
+      "question": "In welchem Hamburger Stadtteil bin ich zuhause?",
       "options": ["Eimsbüttel", "St.Pauli", "Ottensen", "Winterhude"],
       "answer": "St.Pauli"
   },

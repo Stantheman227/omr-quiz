@@ -59,9 +59,9 @@ export default function Quiz() {
   }
 
   return (
-    <div className="flex flex-row container mx-auto mt-10 h-full py-10">
-      <div className="flex flex-1 flex-col items-start space-y-5 pt-5">
-        <p className="w-fit text-[30px] text-white bg-black font-sans-extra-bold uppercase p-1">
+    <div className="flex flex-row container mx-auto mt-10 h-full py-10 w-full">
+      <div className="flex basis-2/3 flex-col items-start space-y-5 pt-5 w-full">
+        <p className="w-full text-[30px] text-white bg-black font-sans-extra-bold uppercase p-1">
           {jsonData[currentStep].question}
         </p>
         <div className="w-full grid grid-cols-1 gap-2 rounded-xl">
@@ -85,7 +85,7 @@ export default function Quiz() {
       </div>
 
       {/* Progress Section*/}
-      <div className="flex flex-col w-full flex-1 items-center justify-center space-x-10 space-y-10">
+      <div className="flex flex-col w-full basis-1/3 items-center justify-center space-x-10 space-y-10">
         <p className="font-sans-bold text-xl">
           Dein aktueller Progress im Quiz ist {currentStep + 1} / 10
         </p>
