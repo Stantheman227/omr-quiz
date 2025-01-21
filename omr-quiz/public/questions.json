@@ -1,23 +1,52 @@
-  [
-    {
-      "question": "Welcher Döner ist der beliebteste in Hamburg?",
-      "options": ["Imren Grill", "Köz Urfa", "Altona Döner", "Baba Green"],
-      "answer": "Köz Urfa"
-    },
-    {
-      "question": "Wo gehe ich am liebsten tanzen?",
-      "options": ["Mojo Club", "Golden Pudel Club", "Fundbureau", "Uebel & Gefährlich"],
-      "answer": "Mojo Club"
-    },
-    {
-      "question": "Welches Café trinke ich gerne?",
-      "options": ["Elbgold", "Törnqvist", "Public Coffee Roasters", "Kaffeekommune"],
-      "answer": "Elbgold"
-    },
-    {
+[
+  {
+      "question": "Welchen Döner esse ich am liebsten?",
+      "options": ["Steakdöner von Pamukkale Köz in der Schanze", "Tantuni Döner bei Golden Kebab Eimsbüttel", "Hakan Abi's Döner mit Parmesan Soße", "Monkey's Ufo Döner in der Innenstadt"],
+      "answer": "Steakdöner von Pamukkale Köz in der Schanze"
+  },
+  {
+      "question": "Wo gibt es die besten Franzbrötchen?",
+      "options": ["Beim Kiezbäcker", "In der kleinen Konditorei", "Beim Schanzenbäcker", "Cinnamood hat die Besten"],
+      "answer": "Beim Kiezbäcker"
+  },
+  {
+      "question": "Wo trinke ich am liebsten meinen Kaffe?",
+      "options": ["Schanzen Elbgold", "Deathpresso Sternschanze", "Public Coffee Roasters in der Neustadt", "Playground Coffee St. Pauli"],
+      "answer": "Deathpresso Sternschanze"
+  },
+  {
       "question": "Was mache ich an einem typischen Freitagabend?",
-      "options": ["Essen gehen", "Tanzen", "Netflix", "Bier in der Schanze"],
-      "answer": "Bier in der Schanze"
-    }
-  ]
-  
+      "options": ["Feiern gehen", "Fitnessstudio", "Netflix", "Kellnern"],
+      "answer": "Kellnern"
+  },
+  {
+      "question": "Was ist mein Lieblingsspot in Hamburg?",
+      "options": ["Bunkerterasse", "Alstertreppe", "Alsterwiesen", "Stadtpark"],
+      "answer": "Bunkerterasse"
+  },
+  {
+      "question": "Welcher Burgerladen hat meiner Meinung nach die besten Burger?",
+      "options": ["Hob's Hut of Burger - Ballindamm", "Grilly Idol St.Pauli", "Otto's Burger in der Schanze", "Dulf's Burger Messehallen"],
+      "answer": "Hob's Hut of Burger - Ballindamm"
+  },
+  {
+      "question": "Welches Instrument spiele ich leidenschaftlich?",
+      "options": ["Gitarre", "Klavier", "Schlagzeug", "Didgeridoo"],
+      "answer": "Gitarre"
+  },
+  {
+      "question": "Welchen Drink bestelle ich gerne im Pelican?",
+      "options": ["Miami Pornstar", "Paloma", "Espresso Martini", "Einfach nur ein Astra"],
+      "answer": "Einfach nur ein Astra"
+  },
+  {
+      "question": "In welchem Hamburger Stadtteil fühle ich mich am meisten zuhause?",
+      "options": ["Eimsbüttel", "St.Pauli", "Ottensen", "Winterhude"],
+      "answer": "St.Pauli"
+  },
+  {
+      "question": "Welches Hamburger Event ist ein Highlight für mich?",
+      "options": ["Reeperbahn Festival", "Harley Days", "Hafengeburtstag", "Altonale"],
+      "answer": "Reeperbahn Festival"
+  }
+]

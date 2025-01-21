@@ -8,14 +8,19 @@ export default {
   ],
   theme: {
     extend: {
+      
       fontFamily: {
-        'omr-sans': ['OMR-Sans-Regular', 'sans-serif'],
-        'omr-sans-bold': ['OMR-Sans-Bold', 'sans-serif'],
-        'omr-sans-extra-bold': ['OMR-Sans-Extra-Bold', 'sans-serif'],
+        'sans': ['OMR-Sans-Regular', 'sans-serif'],
+        'sans-bold': ['OMR-Sans-Bold', 'sans-serif'],
+        'sans-extra-bold': ['OMR-Sans-Extra-Bold', 'sans-serif'],
       },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        "omr-orange": "#F2B200",
+        "omr-purple": "#8259ff",
+        "omr-purple-light": "#6644b8",
+        "omr-black": "#0E1014",
       },
     },
   },

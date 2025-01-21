@@ -2,24 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "OMR-Sans-Regular";
+  src: url("https://cdn.shopify.com/s/files/1/0563/4310/1600/files/OMR-Sans-Regular.woff2?v=1681211037");
+}
+@font-face {
+  font-family: "OMR-Sans-Bold";
+  src: url("https://cdn.shopify.com/s/files/1/0563/4310/1600/files/OMR-Sans-Bold.woff2?v=1681211038");
+}
+@font-face {
+  font-family: "OMR-Sans-Extra-Bold";
+  src: url("https://cdn.shopify.com/s/files/1/0563/4310/1600/files/OMR-Sans-Extra-Bold.woff2?v=1681211038");
+}
 
-  @font-face {
-    font-family: "OMR-Sans-Regular";
-    src: url("https://cdn.shopify.com/s/files/1/0563/4310/1600/files/OMR-Sans-Regular.woff2?v=1681211037");
+@keyframes announcementBar {
+  0% {
+    left: 50%;
   }
-  @font-face {
-    font-family: "OMR-Sans-Bold";
-    src: url("https://cdn.shopify.com/s/files/1/0563/4310/1600/files/OMR-Sans-Bold.woff2?v=1681211038");
+  100% {
+    left: -100%;
   }
-  @font-face {
-    font-family: "OMR-Sans-Extra-Bold";
-    src: url("https://cdn.shopify.com/s/files/1/0563/4310/1600/files/OMR-Sans-Extra-Bold.woff2?v=1681211038");
-  }
-  
-  body {
-    font-family: "OMR-Sans", sans-serif;
-  }
+}
 
+.scrollingText {
+  white-space: nowrap;
+  position: relative;
+  animation-name: announcementBar;
+  animation-duration: 90s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
 
+.progress-circle-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+}
 
-/* #8259ff #ffffff #000000 */ 
+.progress-circle {
+  transform: rotate(-90deg); /* Start bei "12 Uhr" */
+}
+
+.circle-background {
+  transition: stroke-dashoffset 0.3s ease-in-out;
+}
+
+.circle-progress {
+  transition: stroke-dashoffset 0.3s ease-in-out;
+}
+
+.progress-text {
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
