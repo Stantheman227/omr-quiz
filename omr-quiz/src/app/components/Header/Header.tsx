@@ -36,7 +36,7 @@ export default function Header() {
       style={{ zIndex: 50 }}
     >
       <div className="flex items-center justify-center font-sans-bold w-full h-8 bg-[#7fe0db] overflow-hidden relative">
-        <div className="scrollingText flex space-x-20 text-sm	">
+        <div className="scrollingText flex space-x-4 lg:space-x-20 text-sm	">
           <span>
             Die OMR Digital Marketing School 2025 startet bald – bist du dabei?
             🎓
@@ -80,19 +80,21 @@ export default function Header() {
         </div>
       </div>
 
-      <div className="flex flex-row items-center justify-between px-14 py-5 ">
-        <div className="flex flex-row space-x-10 items-center justify-start">
+      <div className="flex flex-row items-center justify-between px-2 md:px-14 md:py-5 ">
+        <div className="flex flex-row space-x-4 md:space-x-10 items-center justify-start">
           <Image
             src="/omr_education_logo.svg"
             width={140}
             height={50}
             alt="omr_logo.svg"
           />
-          <p className="cursor-pointer">Weiterbildungen</p>
-          <p className="cursor-pointer">Geförderte Weiterbildungen</p>
-          <p className="cursor-pointer">Unternehmenslösungen</p>
+          <div className="hidden md:flex md:space-x-10">
+            <p className="cursor-pointer">Weiterbildungen</p>
+            <p className="cursor-pointer">Geförderte Weiterbildungen</p>
+            <p className="cursor-pointer">Unternehmenslösungen</p>
+          </div>
         </div>
-        <div className="flex flex-row space-x-5 items-center justify-start">
+        <div className="flex flex-row space-x-5 items-center justify-start px-2 md:p-0">
           <img
             className="cursor-pointer"
             src="/icon.svg"

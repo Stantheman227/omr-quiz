@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="container mx-auto flex flex-row items-start justify-center space-x-20 h-full text-white p-5">
+    <div className="container mx-auto flex flex-col md:flex-row items-center md:items-start justify-center md:space-x-20 h-full text-white p-5">
       <div className="flex flex-col items-center justify-center">
         <p className="text-xs font-sans-bold"> Was habe ich benutzt?</p>
         <p className="text-xs pt-3">Tailwind CSS</p>

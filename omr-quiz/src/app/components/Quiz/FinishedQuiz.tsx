@@ -36,9 +36,11 @@ export default function FinishedQuiz({
   return (
     <div className="bg-black">
       <div className="pt-16 container mx-auto text-white pb-16">
-        <div className="flex flex-row space-x-5 items-center justify-center">
-          <div className="flex flex-col">
-            <p className="font-sans-extra-bold text-3xl">Quiz beendet!</p>
+        <div className="flex flex-col-reverse md:flex-row space-x-5 items-center justify-center">
+          <div className="flex flex-col text-center md:text-start">
+            <p className="font-sans-extra-bold text-3xl md:mb-2">
+              Quiz beendet!
+            </p>
             <p>
               Herzlichen Glückwunsch du hast es geschafft das Quiz zu beenden!
               <br />
@@ -48,7 +50,7 @@ export default function FinishedQuiz({
               gut so!
             </p>
           </div>
-          <div className="object-contain h-80 w-80 rounded-full overflow-hidden">
+          <div className="object-contain h-60 md:h-80 w-60 md:w-80 rounded-full overflow-hidden">
             <Image
               src="/finished.jpeg"
               alt="Finished.jpeg"
@@ -64,7 +66,7 @@ export default function FinishedQuiz({
             </p>
 
             <Form
-              className="flex flex-col rounded-l items-center justify-center"
+              className="flex flex-col rounded-l items-center justify-center p-2 md:p-0"
               action="/sendEmailApi"
             >
               {" "}
@@ -114,10 +116,12 @@ export default function FinishedQuiz({
               </div>
             </div>
 
-            <p className="font-sans-extra-bold text-4xl">Deine Antworten:</p>
+            <p className="font-sans-extra-bold text-4xl p-2 md:p-0">
+              Deine Antworten:
+            </p>
             {jsonData.map((question, index) => (
-              <div key={index} className="rounded-l">
-                <p className="relative w-fit text-3xl text-black bg-white font-sans-extra-bold uppercase p-1">
+              <div key={index} className="rounded-l p-2 md:p-0">
+                <p className="relative w-fit text-xl md:text-3xl text-black bg-white font-sans-extra-bold uppercase p-1">
                   Frage {index + 1} : {question.question}
                 </p>
                 <p className="pt-1">
